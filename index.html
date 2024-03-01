@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang= "es">
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="windth=device-width, initial-scale=1.0">
+	<title>HTML Introduction</title>
+
+</head>
+<body style="background-color: aliceblue;">   
+   (h1= Titulos)   (h2=Subtitulos)   (h3=Como subtitulos, resanltaciones etc) (ul=inicio de lista desordenada)(ol=inicio de lista ordenada)
+	
+  <div style="background-color: rgb(210, 255, 250);">
+      <h1>HTML Introduction </h1>
+      <ul>
+      <li> Estandar para hacer una pagina web (Standart for Hyper Text Markup Language) </li>
+      <li> Describe la estructura de las paginas web</li>
+      <li> Consiste en una serie de elementos </li>
+      <li> Los elementos le dicen al navegador como mostrar el contenido </li>
+      <li> Los elemnetos tasmbien consisten en piezas de etiquetas con contenido</li>
+     </ul>
+    </div>
+
+<div style="background-color: rgb(165, 247, 196);">
+  <h3> Basics Elements Explained</h3>
+  <ol>
+   <li>La etiqueta "DOCTYOPE" define ña declaracion del documento en cuestion como HTML</li>
+   <li>L etiqueta HTML es el elemento principal de una pagina HTML </li>
+   <li>La etiqueta "head" contiene informacion adicional acerca de la pagina HTML </li>
+   <li>La etiqueta "title" especifica el titulo de la pagina web </li>
+   <li>La etiqueta "body" especifica el cuerpo de la pagina web (todos los elementos visibles) </li>
+   <li>La etiqueta "h1" define un texto de tamaño titular </li>
+   <li>La etiqueta "h2" define un texto de tamaño subtitular </li>
+   <li>La etiqueta "p" define un texto de tamaño parrafo </li>
+ </ol>
+</div>
+
+<div style="background-color: rgb(125, 186, 247);">
+  <h3>¿Que es un elemento  HTML?</h3>
+  <p>Un elemnteo HTML esta definido por una etiqueta de inicio, seguido de algun contenido y una etiqueta de finalizacion</p>
+  <ul>
+    <li>&lt;NombreEtiqueta&gt;: Etiqueta de inicio</li>
+    <li>&lt;Contenido&gt;:entre la etiqueta de inicio y la etiqueta de finalizacion</li>
+    <li>&lt;/NombreEtiqueta&gt;: Etiqueta de finalizacion</li>
+  </ul>
+</div>
+
+<div style="background-color: rgb(240, 208, 169);">
+  <h3>Atributos HTML</h3>
+  <p>Los atributos HTML proporcionanan informacion adicional acerca de los elementos HTML (siempre son especificados en la etiqueta de inicio)</p>
+  <ul>
+   <li><img src="Perrito.jpg" width="180" height="180"  alt="Esto ya no sirve"></li>
+   <li> <a href="https://www.youtube.com/"> Click Aqui </a></li>
+  </ul>
+</div>
+
+<div style="background-color: rgb(238, 145, 238);">
+  <h3>Dar formato a elementos</h3>
+  <ul>
+    <li>&lt;Un texto en negrigtas &gt;:<b> negritas </b></li>
+    <li>&lt;strong &gt;: <strong>Texto en negritas</strong></li>
+    <li>&lt;Texto italico&gt;: <i> Texto italico </i></li>
+    <li>&lt;Texto resaltado&gt;: <mark>Texto resaltado</mark>
+    </li>
+  </ul>
+</div>
+
+   <div class="Estilos" style="background-color: rgb(245, 158, 175);">
+  <h3>Estilos en HTML</h3>
+  <p>Los etilos en HTML son atributos usados para añadir diseño a las etiquetas de HTML, asi como color, tamaño y mas</p>
+  <p><strong>Estructura de atributos de Estilos</strong></p>
+  <P>Configurar el estilo en un elemento HTML se realiza utilizando el atributo HTML <mark>style</mark></P>
+  <ul>
+   <p>&lt;tagname style="property: value; property: value"&gt;Contenido&lt;/tagname&gt;:</p>
+   <p style="color:white;background-color: brown;font-size: 70px;font-family:verdana;text-align: center;">Configurar el 
+    estilo en un elememnto HTML se realiza utilizando el atributo HTML</p>
+   </div>
+     
+   <div class="Etiqueta map" style="background-color: rgb(219, 248, 191);">
+    <h3>Etiqueta map</h3>
+    <p>La etiqueta <b>&lt;map&gt;</b> define el mapa de una imagen. Una imagen mapeada es una imagen que tiene distintas areas detectables 
+    por el navegador, logrando identificar de manera independiente cada una de las areas.</p> 
+    <p>La etiqueta <b>&lt;map&gt;</b> define las areas de la imagen meidante la etiqueta <b>&lt;area&gt;</b> con los atributos HTML "shape" que define 
+    la forma del area señalada en la imagen, "coords" que define las coordendas de cada uno de los puntos de la shape, "href" que puede 
+    definir un hipervinculo para cada una de las areas</p>
+
+      <img src ="workflow.jpg" usemap="=#workmap">
+      <map name = "#workmap">
+        <area shape="rect" coord="34,44,270,350"href="pagina1.com">
+        <area shape="circle" coord="200,172,333,250"href="pagina2.com">
+      </map>
+    </div>
+    <div class="Elemento table" style="background-color: rgb(240, 139, 139);">
+        <ul>
+    <h3>Elemento Table</h3>
+   <p>La etiqueta <b>&lt;table&gt;</b> permite colocar los datos en filas y columnas usando sus derivaciones <b>&lt;tr&gt;</b> para definir 
+    una fila (table row), <b>&lt;th&gt;</b> para definir los encabezados de la tabla (tabla header) y <b>&lt;td&gt;</b> para asignar valores a las filas correspondientes
+    a los encabezados de las columnas.</p>
+          <table style="border: 1px black solid; border-collapse: collapse;">
+            <tr>
+              <th style="border: 1xp black solid;">Nombre</th>
+              <th style="border: 1xp black solid;">Apellido</th>
+              <th style="border: 1xp black solid;">Edad</th>
+              <th style="border: 1xp black solid;">Direccion</th>
+            </tr>
+            <tr>
+              <td style="border: 1xp black solid;">Eduardo</td>
+              <td style="border: 1xp black solid;">Campos</td>
+              <td style="border: 1xp black solid;">19</td>
+              <td style="border: 1xp black solid;">Calle 28#3 Col. Acueducto Qro</td>
+              </t style="border: 1xp black solid;"r>
+            </tr>
+          </table>
+        </ul>
+        </div>
+
+      <div class="Etqueta div" style="background-color: rgb(201, 154, 245);">
+        <he>Etiqueta div</he>
+      <p>La etiqueta <b>&lt;div&gt;</b> es un elemento que toma el ancho de la pagina por defecto y realiza automaticamente un salto de 
+      linea despues de cada elemento <b>&lt;div&gt; se puede interpretar como un contenedor de elementos HTML.</b></p>
+      <div style="background-color: violet; height: 350px;">
+        <h1>Titulo</h1>
+        <p>Texto interesante para el titulo</p>
+        <img src="LUNA2.jpg"  style="width: 150px; height: 200px;">
+      </div>
+      <div style="background-color: plum; display: flex;">
+        <h1>Titulo2</h1>
+        <p>Texto interesante para el titulo</p>
+        <img src="LUNA2.jpg"  style="width: 150px; height: 200px;">
+      </div>
+      </div>
+
+
+  </ul>
+
+
+
+  <img src="Perrito.jpg" style="width: 100px;height: 100px; display: block;margin-left:auto;margin-right: auto;">
+
+  <h2>Elementos HTML "DIV" </h2>
+  <p>La etiqueta &lt;div&gt; es usada como un contenedor en HTML para otros elementos HTML</p>
+  <div style= "background-color: rgb(217, 255, 0);">
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li><div style="background-color: rgb(247, 0, 0);">Elemento 3</div></li>
+    </ul>
+  </div>
+
+</body>
+</html>
+
